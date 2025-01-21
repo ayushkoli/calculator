@@ -6,6 +6,11 @@ function playSound() {
   sound.play();
 }
 
+function playSoundsubmit() {
+  const sound1 = new Audio("s.mp3"); // Path to your sound file
+  sound1.play();
+}
+
 function gotodisplay(input) {
   playSound(); // Play sound on input
   display.value += input;
@@ -14,7 +19,7 @@ function gotodisplay(input) {
 
 function equals() {
     try {
-      playSound(); // Play sound on equals
+      playSoundsubmit(); // Play sound on equals
       let result = eval(display.value); // Evaluate the expression in the display
       // Round to 4 decimal places if the result is a decimal number
       if (result % 1 !== 0) {
