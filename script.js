@@ -7,7 +7,7 @@ function playSound() {
 }
 
 function playSoundsubmit() {
-  const sound1 = new Audio("s.mp3"); // Path to your sound file
+  const sound1 = new Audio("ss.mp3"); // Path to your sound file
   sound1.play();
 }
 
