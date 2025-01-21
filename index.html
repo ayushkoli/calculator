@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="calculator">
+      <div class="display-container">
+        <input id="display" type="text" readonly />
+        <button id="delete" onclick="deleteLast()">&#9003;</button>
+      </div>
+      <div class="keys">
+        <button onclick="gotodisplay('+')">+</button>
+        <button onclick="gotodisplay('-')">-</button>
+        <button onclick="gotodisplay('*')">*</button>
+        <button onclick="gotodisplay('/')">/</button>
+        <button onclick="gotodisplay('%')">%</button>
+        <button onclick="gotodisplay('(')">(</button>
+        <button onclick="gotodisplay(')')">)</button>
+        <button onclick="gotodisplay('.')">.</button>
+        <button onclick="gotodisplay('1')">1</button>
+        <button onclick="gotodisplay('2')">2</button>
+        <button onclick="gotodisplay('3')">3</button>
+        <button onclick="gotodisplay('4')">4</button>
+        <button onclick="gotodisplay('5')">5</button>
+        <button onclick="gotodisplay('6')">6</button>
+        <button onclick="gotodisplay('7')">7</button>
+        <button onclick="gotodisplay('8')">8</button>
+        <button onclick="gotodisplay('9')">9</button>
+        <button onclick="gotodisplay('0')">0</button>
+        <button onclick="equals()">=</button>
+        <button onclick="cleardisplay()">C</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
